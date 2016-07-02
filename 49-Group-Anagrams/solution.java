@@ -8,8 +8,8 @@ public class Solution {
             char[] strChar = str.toCharArray();
             Arrays.sort(strChar);
             //String strStr = strChar.toString();
-            String strstr = new String(strChar);
-            if (!groupMap.containsKey(strChar)){
+            String strStr = new String(strChar);
+            if (!groupMap.containsKey(strStr)){
                 List<String> newList = new ArrayList<String>();
                 newList.add(str);
                 groupMap.put(strStr, newList);
