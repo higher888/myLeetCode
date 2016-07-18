@@ -25,7 +25,7 @@ public class Solution {
         //set up random 
         head = dummy1.next;
         while (head != null){
-            if (head.random != null){
+            if (head.random.next != null){
                 head.next.random = head.random.next; //set up random
             }// note that we cannot split list at the same of setting up random, because some randoms may track back and splitted list cannot give the right answer.
             head = head.next;
