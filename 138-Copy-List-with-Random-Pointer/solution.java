@@ -37,7 +37,9 @@ public class Solution {
         newHead = dummy2.next;
         while (head != null){
             head.next = newHead.next;
-            newHead.next = head.next.next;
+            if (head.next != null){
+                newHead.next = head.next.next;
+            }
             head = head.next;
             newHead = newHead.next;
         }
