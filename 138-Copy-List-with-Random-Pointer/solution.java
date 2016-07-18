@@ -24,7 +24,7 @@ public class Solution {
         }
         //set up random 
         head = dummy1.next;
-        ListNode newHead = dummy2.next;
+        RandomListNode newHead = dummy2.next;
         while (head != null){
             if (head.random != null){
                 newHead.random = head.random.next; //set up random
