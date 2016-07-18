@@ -33,7 +33,7 @@ public class Solution {
         //split into two list
         dummy2.next = dummy1.next.next;
         head = dummy1.next;
-        newHead = dummy2.next;
+        RandomListNode newHead = dummy2.next;
         while (head != null){
             head.next = newHead.next;
             if (head.next != null){
