@@ -20,7 +20,7 @@ public class Solution {
             RandomListNode temp = head.next;
             head.next = newNode;
             newNode.next = temp;
-            head = head.next;
+            head = temp;
         }
         //set up random 
         head = dummy1.next;
