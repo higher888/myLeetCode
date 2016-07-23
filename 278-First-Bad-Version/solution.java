@@ -7,17 +7,17 @@ public class Solution extends VersionControl {
         int end = n;
         while (start + 1 < end){
             int mid = start + (end - start) / 2;
-            if (SVNRepo.isBadVersion(mid)){
+            if (isBadVersion(mid)){
                 end = mid;
             }
             else {
                 start = mid;
             }
         }
-        if (SVNRepo.isBadVersion(start)){
+        if (isBadVersion(start)){
             return start;
         }
-        if (SVNRepo.isBadVersion(end)){
+        if (isBadVersion(end)){
             return end;
         }
         return -1;
