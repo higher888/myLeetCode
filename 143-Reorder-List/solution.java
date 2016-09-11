@@ -66,5 +66,6 @@ public class Solution {
         if (right != null) {
             cur.next = right;
         }
+        System.out.println(2);
     }
 }
